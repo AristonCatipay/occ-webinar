@@ -1,5 +1,10 @@
 # Link
 
+### PPT
+```
+https://docs.google.com/presentation/d/1Zglmv9rgTxgpPcsoR4rm87BAjyeZLOO177K0LyY37-g/edit#slide=id.p
+```
+
 Large Language Models AIs
 
 ```
@@ -51,6 +56,7 @@ Astria: https://www.astria.ai
 AI tools for Video Editing
 
 ```
+AI tools for Video Editing
 veed.io: https://www.veed.io
 simplified: https://simplified.com
 unscreen: https://www.unscreen.com
@@ -128,6 +134,7 @@ Controlla: https://www.controlla.xyz
 AI Website Builder
 
 ```
+AI Website Builder
 durable: https://durable.co
 uizard: https://uizard.io/
 Locofy: https://www.locofy.ai/
@@ -138,6 +145,7 @@ Mixo: https://www.mixo.io/
 AI Tools for Marketing
 
 ```
+AI Tools for Marketing
 Browse AI: https://www.browse.ai
 ```
 
