@@ -1,6 +1,7 @@
 # Link
 
 ### PPT
+
 ```
 https://docs.google.com/presentation/d/1Zglmv9rgTxgpPcsoR4rm87BAjyeZLOO177K0LyY37-g/edit#slide=id.p
 ```
@@ -26,12 +27,12 @@ AI tools for Graphic Design
 
 ```
 AI tools for Graphic Design
-Magic Studio: https://magicstudio.com/magiceraser/
-Fotor: https://www.fotor.com/ai-image-generator/
-Photoroom: https://www.photoroom.com
-Playground ai: https://playground.com
-Withflair: https://withflair.ai
-Pebblely: https://pebblely.com
+1. Magic Studio: https://magicstudio.com/magiceraser/
+2. Fotor: https://www.fotor.com/ai-image-generator/
+3. Photoroom: https://www.photoroom.com
+4. Playground ai: https://playground.com
+5. Withflair: https://withflair.ai
+6. Pebblely: https://pebblely.com
 ```
 
 Logo Generators
@@ -47,20 +48,26 @@ Mid Journey
 
 ```
 MidJourney: https://www.midjourney.com/
-Bluewillow: https://www.bluewillow.ai/
-Starry AI: https://starryai.com/
-NightCafe: https://creator.nightcafe.studio/
-Astria: https://www.astria.ai
+```
+
+Other AI Image Generators
+
+```
+Other AI Image Generators
+1. Bluewillow: https://www.bluewillow.ai/
+2. Starry AI: https://starryai.com/
+3. NightCafe: https://creator.nightcafe.studio/
+4. Astria: https://www.astria.ai
 ```
 
 AI tools for Video Editing
 
 ```
 AI tools for Video Editing
-veed.io: https://www.veed.io
-simplified: https://simplified.com
-unscreen: https://www.unscreen.com
-media.io: https://www.media.io
+1. veed.io: https://www.veed.io
+2. simplified: https://simplified.com
+3. unscreen: https://www.unscreen.com
+4. media.io: https://www.media.io
 ```
 
 AI for Creating video
@@ -81,10 +88,10 @@ AI Avatar Video Generators
 
 ```
 AI Avatar Video Generators (Text to Video)
-synthesia.io: https://www.synthesia.io
-pictory.ai: https://pictory.ai
-Fliki.ai: https://fliki.ai
-Zebracat: https://www.zebracat.ai/
+1. synthesia.io: https://www.synthesia.io
+2. pictory.ai: https://pictory.ai
+3. Fliki.ai: https://fliki.ai
+3. Zebracat: https://www.zebracat.ai/
 ```
 
 ```
@@ -101,45 +108,45 @@ AI tools for Audio Editing
 
 ```
 AI tools for Audio Editing (Text-to-Speech/Voice-over)
-murf.ai: https://murf.ai/
-play.ht: https://play.ht
-typecast.ai: https://typecast.ai/
-naturalreaders: https://www.naturalreaders.com/online/
-Speechify: https://speechify.com/
+1. murf.ai: https://murf.ai/
+2. play.ht: https://play.ht
+3. typecast.ai: https://typecast.ai/
+4. naturalreaders: https://www.naturalreaders.com/online/
+5. Speechify: https://speechify.com/
 ```
 
 ```
 AI tools for Audio Editing (Voice Clone)
-elevenlabs.io: https://beta.elevenlabs.io/
-FakeYou: https://fakeyou.com/
-MetaVoice: https://themetavoice.xyz/
+1. elevenlabs.io: https://beta.elevenlabs.io/
+2. FakeYou: https://fakeyou.com/
+3. MetaVoice: https://themetavoice.xyz/
 ```
 
 ```
 AI tools for Audio Editing (Voice Changer)
-Voicemod: https://www.voicemod.net/ai-voices/
-MetaVoice: https://themetavoice.xyz/
-voice.ai: https://voice.ai/
+1. Voicemod: https://www.voicemod.net/ai-voices/
+2. MetaVoice: https://themetavoice.xyz/
+3. voice.ai: https://voice.ai/
 ```
 
 ```
 AI tools for Audio Editing (AI Music Generator)
-Soundraw: https://soundraw.io/
-boomy: https://boomy.com/
-OpenAI: https://openai.com/research/jukebox
-Riffusion: https://www.riffusion.com
-Controlla: https://www.controlla.xyz
+1. Soundraw: https://soundraw.io/
+2. boomy: https://boomy.com/
+3. OpenAI: https://openai.com/research/jukebox
+4. Riffusion: https://www.riffusion.com
+5. Controlla: https://www.controlla.xyz
 ```
 
 AI Website Builder
 
 ```
 AI Website Builder
-durable: https://durable.co
-uizard: https://uizard.io/
-Locofy: https://www.locofy.ai/
-SiteKick: https://www.sitekick.ai/
-Mixo: https://www.mixo.io/
+1. durable: https://durable.co
+2. uizard: https://uizard.io/
+3. Locofy: https://www.locofy.ai/
+4. SiteKick: https://www.sitekick.ai/
+5. Mixo: https://www.mixo.io/
 ```
 
 AI Tools for Marketing
@@ -153,64 +160,66 @@ Other AI Marketing Tools
 
 ```
 Other AI Marketing Tools
-Sales Funnel(campaign): https://systeme.io/home
-AI Marketer: https://contlo.com/
+1. Sales Funnel(campaign): https://systeme.io/home
+2. AI Marketer: https://contlo.com/
 
 Email Marketing
-Email Tuna: https://emailtuna.com/
-Benchmark Email: https://www.benchmarkemail.com/
-Mail Mentor (Sales Email): https://www.mailmentor.io/
-Ellie (email writing tool): https://tryellie.com/
-WARMER.ai (email tool): https://warmer.ai/
+1. Email Tuna: https://emailtuna.com/
+2. Benchmark Email: https://www.benchmarkemail.com/
+3. Mail Mentor (Sales Email): https://www.mailmentor.io/
+4. Ellie (email writing tool): https://tryellie.com/
+5. WARMER.ai (email tool): https://warmer.ai/
 
 Cold Outreach Email/LinkedIn
-Supersend: https://supersend.io/
-Botnation: https://botnation.ai/en/
+1. Supersend: https://supersend.io/
+2. Botnation: https://botnation.ai/en/
 
 Automated reply Email/Instagram/whatsapp:
 Sales Stack: https://salesstack.ai/
+```
 
-
+```
 Social Media Management/Automation:
-axiom.ai: https://axiom.ai/recipes
-Repurpose.io: https://repurpose.io/
+1. axiom.ai: https://axiom.ai/recipes
+2. Repurpose.io: https://repurpose.io/
 
 Social Media Marketing:
-Later: https://later.com/
-Albert.ai: https://albert.ai/
+1. Later: https://later.com/
+2. Albert.ai: https://albert.ai/
 
 Social Ads:
-Smartly.io: https://www.smartly.io/
-exod.ai (Facebook Ads): https://www.exod.ai/
+1. Smartly.io: https://www.smartly.io/
+2. exod.ai (Facebook Ads): https://www.exod.ai/
 
 Ad Creation:
-AdCreative.ai: https://www.adcreative.ai/
-Adsbot: https://adsbot.co/
+1. AdCreative.ai: https://www.adcreative.ai/
+2. Adsbot: https://adsbot.co/
 
 
 SEO:
-Frase: https://www.frase.io/
-Ranked: https://www.ranked.ai/
-CanIRank(SEO Recommendations): https://www.canirank.com/
-Market Brew(Landing Page Analysis): https://marketbrew.ai/
-Keyword Insights(Keywords): https://www.keywordinsights.ai/
-LinkHunter(SEO Backlinks): https://linkhunter.com/
-siteright.co (Sales Funnel): https://www.siteright.co/
-billo.app (UGC Content Creators): https://billo.app/
+1. Frase: https://www.frase.io/
+2. Ranked: https://www.ranked.ai/
+3. CanIRank(SEO Recommendations): https://www.canirank.com/
+4. Market Brew(Landing Page Analysis): https://marketbrew.ai/
+5. Keyword Insights(Keywords): https://www.keywordinsights.ai/
+6. LinkHunter(SEO Backlinks): https://linkhunter.com/
+7. siteright.co (Sales Funnel): https://www.siteright.co/
+8. billo.app (UGC Content Creators): https://billo.app/
+```
 
-
+```
 Tweet Generator:
 Tweet Hunter : https://tweethunter.io/
 
 Influencer Marketing:
-klear.com: https://klear.com/
-influencermarketing.ai: https://influencermarketing.ai/
-HypeAuditor: https://hypeauditor.com/
+1. klear.com: https://klear.com/
+2. influencermarketing.ai: https://influencermarketing.ai/
+3. HypeAuditor: https://hypeauditor.com/
 
-Data visualization
-flourish.studio (data visualization/animation): https://flourish.studio/examples/
-piktochart.com (infographic, report, video): https://piktochart.com/
-infogram.com (infographic tool): https://infogram.com/
-obviously.ai/autom (Sales Data to Prediction): https://www.obviously.ai/automl
-Browse AI: https://www.browse.ai/ (Website Data Monitor)
+Data Visualization
+1. flourish.studio (data visualization/animation): https://flourish.studio/examples/
+2. piktochart.com (infographic, report, video): https://piktochart.com/
+3. infogram.com (infographic tool): https://infogram.com/
+4. obviously.ai/autom (Sales Data to Prediction): https://www.obviously.ai/automl
+5. Browse AI(Website Data Monitor): https://www.browse.ai/
 ```
