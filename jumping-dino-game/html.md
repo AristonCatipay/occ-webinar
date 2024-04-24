@@ -11,11 +11,11 @@
 
     <div id="game" style="display: none">
       <div id="dino">
-        <img src="https://clipart-library.com/images/kTKojdBzc.png" />
+        <img src="" />
       </div>
       <div id="bomb">
         <img
-          src="https://www.freeiconspng.com/thumbs/bomb-png/high-resolution-bomb-png-clipart-2.png"
+          src=""
         />
       </div>
     </div>
