@@ -1,11 +1,4 @@
 # Link
-
-### PPT
-
-```
-https://docs.google.com/presentation/d/1Zglmv9rgTxgpPcsoR4rm87BAjyeZLOO177K0LyY37-g/edit#slide=id.p
-```
-
 Large Language Models AIs
 
 ```
