@@ -2,17 +2,17 @@
 const crashRide = document.getElementById("crash-ride");
 const hiHatTop = document.getElementById("hihat-top");
 
-const animateCrashOrRide = () => {
+function animateCrashOrRide() {
   crashRide.style.transform = "rotate(0deg) scale(1.5)";
-};
+}
 
-const animateHiHatClosed = () => {
+function animateHiHatClosed() {
   hiHatTop.style.top = "171px";
-};
+}
 
-const playSound = (e) => {
-  const keyCode = e.keyCode,
-    keyElement = document.querySelector(`div[data-key="${keyCode}"]`);
+function playSound(e) {
+  const keyCode = e.keyCode;
+  const keyElement = document.querySelector(`div[data-key="${keyCode}"]`);
 
   if (!keyElement) return;
 
@@ -29,21 +29,32 @@ const playSound = (e) => {
       animateHiHatClosed();
       break;
   }
-};
+}
 
-const removeCrashRideTransition = (e) => {
+function removeCrashRideTransition(e) {
   if (e.propertyName !== "transform") return;
 
   e.target.style.transform = "rotate(-7.2deg) scale(1.5)";
-};
+}
 
-const removeHiHatTopTransition = (e) => {
+function removeHiHatTopTransition(e) {
   if (e.propertyName !== "top") return;
 
   e.target.style.top = "166px";
-};
+}
 
-const removeKeyTransition = (e) => {
+function removeKeyTransition(e) {
   if (e.propertyName !== "transform") return;
-};
+}
+
+const drumKeys = Array.from(document.querySelectorAll(".key"));
+
+drumKeys.forEach((key) => {
+  key.addEventListener("transitionend", removeKeyTransition);
+});
+
+crashRide.addEventListener("transitionend", removeCrashRideTransition);
+hiHatTop.addEventListener("transitionend", removeHiHatTopTransition);
+
+window.addEventListener("keydown", playSound);
 ```
