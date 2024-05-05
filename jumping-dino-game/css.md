@@ -67,11 +67,11 @@ html {
 
 @keyframes bomb {
   0% {
-    left: 500px
+    left: 500px;
   }
 
   100% {
-    left: -20px
+    left: -20px;
   }
 }
 
