@@ -12,12 +12,6 @@ body {
   margin: 5% 15%;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 h1 {
   text-align: center;
   margin-bottom: 20px;
