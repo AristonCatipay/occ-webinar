@@ -20,12 +20,12 @@ body {
   align-items: center;
 }
 
-#word-box {
+#word-or-message-box {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-#game-box {
+#missed-words-box {
   background-color: #f4f1de;
   width: 300px;
   height: 220px;
@@ -36,7 +36,7 @@ body {
   overflow: hidden;
 }
 
-.block {
+.missed-word-block {
   background-color: #3d405b;
   height: 50px;
   padding: 10px;
@@ -83,7 +83,7 @@ button:hover {
   transform: scale(1.2);
 }
 
-button:disabled{
+button:disabled {
   background-color: #e07a5f;
   pointer-events: none;
   cursor: not-allowed;

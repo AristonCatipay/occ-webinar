@@ -1,129 +1,117 @@
 ```js
-document.addEventListener("DOMContentLoaded", () => {
-  const words = [
-    "abstract", "beautiful", "chocolate", "dynamite", "elephant", "fantastic",
-    "gorgeous", "happiness", "invisible", "jubilant", "knowledge", "luminous",
-    "magnificent", "nightmare", "opulent", "picturesque", "quizzical", "resilient",
-    "symphony", "twilight", "umbrella", "vibrant", "whimsical", "xylophone",
-    "yesterday", "zealous", "adventure", "butterfly", "crystalline", "diligent",
-    "enchanted", "fascinate", "glorious", "harmonious", "illusion", "jovial",
-    "kaleidoscope", "labyrinth", "melancholy", "nostalgia", "optimistic", "paradise",
-    "quintessential", "radiant", "serendipity", "tranquility", "universe", "victorious",
-    "whirlwind", "xenophobia", "youthful", "zephyr", "ambitious", "brilliant", 
-    "celebrate", "delightful", "effervescent", "flourish", "gratitude", "horizon", 
-    "inspiration", "jubilation", "kudos", "luminary", "momentous", "nurture", 
-    "overjoyed", "phenomenal", "quicksilver", "remarkable", "spectacular", "tremendous"
-  ];  
+const words = [
+  "abstract", "beautiful", "chocolate", "dynamite", "elephant", "fantastic",
+  "gorgeous", "happiness", "invisible", "jubilant", "knowledge", "luminous",
+  "magnificent", "nightmare", "opulent", "picturesque", "quizzical", "resilient",
+  "symphony", "twilight", "umbrella", "vibrant", "whimsical", "xylophone",
+  "yesterday", "zealous", "adventure", "butterfly", "crystalline", "diligent",
+  "enchanted", "fascinate", "glorious", "harmonious", "illusion", "jovial",
+  "kaleidoscope", "labyrinth", "melancholy", "nostalgia", "optimistic", "paradise",
+  "quintessential", "radiant", "serendipity", "tranquility", "universe", "victorious",
+  "whirlwind", "xenophobia", "youthful", "zephyr", "ambitious", "brilliant", 
+  "celebrate", "delightful", "effervescent", "flourish", "gratitude", "horizon", 
+  "inspiration", "jubilation", "kudos", "luminary", "momentous", "nurture", 
+  "overjoyed", "phenomenal", "quicksilver", "remarkable", "spectacular", "tremendous"
+];
   
-  let wordTimeLeft = 5;
-  let overallScore = 0;
-  let currentWord = "";
-  let countdownTimer;
-  let wordTimeout;
+let timeLeft = 5;
+let score = 0;
+let currentWord = "";
+let timer;
+let timeout;
 
-  const wordBox = document.getElementById("word-box");
-  const wordInput = document.getElementById("word-input");
-  const wordTimeLeftDisplay = document.getElementById("time-left");
-  const overallScoreDisplay = document.getElementById("score");
-  const startButton = document.getElementById("start-button");
-  const resetButton = document.getElementById("reset-button");
-  const gameBox = document.getElementById("game-box");
+const wordOrMessageBox = document.getElementById("word-or-message-box");
+const wordInput = document.getElementById("word-input");
+const timeDisplay = document.getElementById("time-left");
+const scoreDisplay = document.getElementById("score");
+const startButton = document.getElementById("start-button");
+const resetButton = document.getElementById("reset-button");
+const missedWordsBox = document.getElementById("missed-words-box");
 
-  function startGame() {
-    wordTimeLeft = 5;
-    overallScore = 0;
-    wordInput.value = "";
-    wordInput.disabled = false;
-    wordInput.focus();
-    startButton.disabled = true;
-    resetButton.disabled = false;
-    overallScoreDisplay.textContent = overallScore;
-    wordTimeLeftDisplay.textContent = wordTimeLeft;
-    clearGameBox();
-    displayNewWord();
-    countdownTimer = setInterval(updateWordTimeLeft, 1000);
+startButton.addEventListener("click", startGame);
+resetButton.addEventListener("click", resetGame);
+wordInput.addEventListener("input", checkInput);
+
+function startGame() {
+  score = 0;
+  wordInput.disabled = false;
+  startButton.disabled = true;
+  resetButton.disabled = false;
+  scoreDisplay.textContent = score;
+  timeDisplay.textContent = timeLeft;
+  missedWordsBox.innerHTML = "";
+  displayNewWord();
+  timer = setInterval(updateTimeLeft, 1000);
+}
+
+function resetGame() {
+  clearInterval(timer);
+  clearTimeout(timeout);
+  score = 0;
+  timeLeft = 5;
+  wordInput.disabled = true;
+  startButton.disabled = false;
+  resetButton.disabled = true;
+  scoreDisplay.textContent = score;
+  timeDisplay.textContent = timeLeft;
+  wordOrMessageBox.textContent = "Click Start to Play!";
+  wordInput.value = "";
+  missedWordsBox.innerHTML = "";
+}
+
+function displayNewWord() {
+  currentWord = words[Math.floor(Math.random() * words.length)];
+  wordOrMessageBox.textContent = currentWord;
+  timeLeft = 5;
+  timeDisplay.textContent = timeLeft;
+  wordInput.value = "";
+  clearTimeout(timeout);
+  timeout = setTimeout(handleNoTimeRemaining, timeLeft * 1000);
+}
+
+function updateTimeLeft() {
+  timeLeft--;
+  timeDisplay.textContent = timeLeft;
+  if (timeLeft <= 0) {
+    handleNoTimeRemaining();
   }
+}
 
-  function resetGame() {
-    clearInterval(countdownTimer);
-    clearTimeout(wordTimeout);
+function handleNoTimeRemaining() {
+  const missedWordBlock = document.createElement("div");
+  missedWordBlock.classList.add("missed-word-block");
+  missedWordBlock.textContent = currentWord;
+  missedWordsBox.appendChild(missedWordBlock);
+  checkGameOver();
+  if (
+    wordOrMessageBox.textContent !==
+    "Game Over! Your score is " + score + ". Press Start to Play Again"
+  ) {
+    displayNewWord();
+  }
+}
+
+function checkInput() {
+  if (wordInput.value === currentWord) {
+    score++;
+    scoreDisplay.textContent = score;
+    wordInput.value = "";
+    displayNewWord();
+  }
+}
+
+function checkGameOver() {
+  const missedWordBlocks =
+    missedWordsBox.querySelectorAll(".missed-word-block");
+
+  if (missedWordBlocks.length >= 4) {
+    clearInterval(timer);
+    clearTimeout(timeout);
     wordInput.disabled = true;
     startButton.disabled = false;
     resetButton.disabled = true;
-    overallScore = 0;
-    overallScoreDisplay.textContent = overallScore;
-    wordTimeLeft = 5;
-    wordTimeLeftDisplay.textContent = wordTimeLeft;
-    wordBox.textContent = "Click the start button to start the game!";
-    wordInput.value = "";
-    clearGameBox();
+    wordOrMessageBox.textContent =
+      "Game Over! Your score is " + score + ". Press Start to Play Again";
   }
-
-  function clearGameBox() {
-    while (gameBox.firstChild) {
-      gameBox.removeChild(gameBox.firstChild);
-    }
-  }
-
-  function displayNewWord() {
-    const randomIndex = Math.floor(Math.random() * words.length);
-    currentWord = words[randomIndex];
-    wordBox.textContent = currentWord;
-    wordTimeLeft = 5;
-    wordTimeLeftDisplay.textContent = wordTimeLeft;
-    wordInput.value = "";
-    clearTimeout(wordTimeout);
-    wordTimeout = setTimeout(handleWordTimeout, wordTimeLeft * 1000);
-  }
-
-  function updateWordTimeLeft() {
-    wordTimeLeft--;
-    wordTimeLeftDisplay.textContent = wordTimeLeft;
-    if (wordTimeLeft <= 0) {
-      handleWordTimeout();
-    }
-  }
-
-  function handleWordTimeout() {
-    if (wordBox.textContent === currentWord) {
-      const block = document.createElement("div");
-      block.className = "block";
-      block.textContent = currentWord;
-      gameBox.appendChild(block);
-      checkGameOver();
-      if (
-        wordBox.textContent !==
-        `Game Over! Your score is ${overallScore}. Press Start to Play Again`
-      ) {
-        displayNewWord();
-      }
-    }
-  }
-
-  function checkInput() {
-    if (wordInput.value === currentWord) {
-      overallScore++;
-      overallScoreDisplay.textContent = overallScore;
-      wordInput.value = "";
-      displayNewWord();
-    }
-  }
-
-  function checkGameOver() {
-    const blocks = document.querySelectorAll("#game-box .block");
-
-    if (blocks.length >= 4) {
-      clearInterval(countdownTimer);
-      clearTimeout(wordTimeout);
-      wordInput.disabled = true;
-      startButton.disabled = false;
-      resetButton.disabled = true;
-      wordBox.textContent = `Game Over! Your score is ${overallScore}. Press Start to Play Again`;
-    }
-  }
-
-  startButton.addEventListener("click", startGame);
-  resetButton.addEventListener("click", resetGame);
-  wordInput.addEventListener("input", checkInput);
-});
+}
 ```
